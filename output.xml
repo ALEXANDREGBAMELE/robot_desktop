@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230529 20:01:08.297" rpa="false" schemaversion="3">
+<suite id="s1" name="Test Robot App Paint" source="c:\Users\HP\Desktop\robot_desktop\test_robot_app_paint.robot">
+<test id="s1-t1" name="Automatisation de l'application Paint" line="12">
+<kw name="Open Application" library="RPA.Desktop">
+<arg>mspaint.exe</arg>
+<doc>Start a given application by name (if in PATH),
+or by path to executable.</doc>
+<status status="PASS" starttime="20230529 20:01:11.300" endtime="20230529 20:01:11.312"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230529 20:01:13.327" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230529 20:01:11.319" endtime="20230529 20:01:13.327"/>
+</kw>
+<kw name="Click Element" library="RPA.JavaAccessBridge">
+<arg>class_name=Afx:00007FF6:0</arg>
+<doc>Click element</doc>
+<msg timestamp="20230529 20:01:13.337" level="FAIL">ValueError: ContextTree has not been initialized</msg>
+<status status="FAIL" starttime="20230529 20:01:13.334" endtime="20230529 20:01:13.341"/>
+</kw>
+<kw name="Click Element" library="RPA.JavaAccessBridge">
+<arg>class_name=Afx:00007FF6:8</arg>
+<doc>Click element</doc>
+<status status="NOT RUN" starttime="20230529 20:01:13.343" endtime="20230529 20:01:13.343"/>
+</kw>
+<kw name="Drag And Drop" library="RPA.Desktop">
+<arg>class_name=Afx:00007FF6:2</arg>
+<arg>100, 100</arg>
+<doc>Drag mouse from source to destination while holding the left mouse button.</doc>
+<status status="NOT RUN" starttime="20230529 20:01:13.349" endtime="20230529 20:01:13.350"/>
+</kw>
+<kw name="Click Element" library="RPA.JavaAccessBridge">
+<arg>class_name=Afx:00007FF6:0</arg>
+<doc>Click element</doc>
+<status status="NOT RUN" starttime="20230529 20:01:13.351" endtime="20230529 20:01:13.352"/>
+</kw>
+<kw name="Click Element" library="RPA.JavaAccessBridge">
+<arg>class_name=Afx:00007FF6:5</arg>
+<doc>Click element</doc>
+<status status="NOT RUN" starttime="20230529 20:01:13.353" endtime="20230529 20:01:13.354"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>class_name=Edit</arg>
+<arg>C:\\path\\to\\image.png</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230529 20:01:13.356" endtime="20230529 20:01:13.356"/>
+</kw>
+<kw name="Click Element" library="RPA.JavaAccessBridge">
+<arg>class_name=Afx:00007FF6:1</arg>
+<doc>Click element</doc>
+<status status="NOT RUN" starttime="20230529 20:01:13.358" endtime="20230529 20:01:13.359"/>
+</kw>
+<kw name="Close Application" library="RPA.Desktop">
+<arg>app_execut</arg>
+<doc>Close given application. Needs to be started
+with this library.</doc>
+<status status="NOT RUN" starttime="20230529 20:01:13.360" endtime="20230529 20:01:13.361"/>
+</kw>
+<status status="FAIL" starttime="20230529 20:01:11.297" endtime="20230529 20:01:13.364">ValueError: ContextTree has not been initialized</status>
+</test>
+<status status="FAIL" starttime="20230529 20:01:08.319" endtime="20230529 20:01:13.369"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test Robot App Paint">Test Robot App Paint</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230529 20:01:10.518" level="WARN">Environment variable `RC_JAVA_ACCESS_BRIDGE_DLL` needs to be set to absolute path of `WindowsAccessBridge-64.dll`</msg>
+</errors>
+</robot>
